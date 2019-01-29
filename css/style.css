@@ -1,0 +1,71 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+header {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto; }
+  header::before, header::after {
+    display: table;
+    content: ' ';
+    flex-basis: 0;
+    order: 1; }
+  header::after {
+    clear: both; }
+  header .logo {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      header .logo {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    header .logo, header .logo:last-child:not(:first-child) {
+      float: left;
+      clear: none; }
+    header .logo:last-child:not(:first-child) {
+      float: right; }
+
+main {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto; }
+  main::before, main::after {
+    display: table;
+    content: ' ';
+    flex-basis: 0;
+    order: 1; }
+  main::after {
+    clear: both; }
+  main article {
+    width: 66.6666666667%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      main article {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    main article, main article:last-child:not(:first-child) {
+      float: left;
+      clear: none; }
+    main article:last-child:not(:first-child) {
+      float: right; }
+  main aside {
+    width: 33.3333333333%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      main aside {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    main aside, main aside:last-child:not(:first-child) {
+      float: left;
+      clear: none; }
+    main aside:last-child:not(:first-child) {
+      float: right; }

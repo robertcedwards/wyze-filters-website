@@ -1,0 +1,24 @@
+@import "settings";
+@import "foundation";
+
+header {
+  @include grid-row;
+  .logo {
+    @include grid-column($columns:12);
+  }
+  nav {
+    span{}
+  }
+}
+main {
+  @include grid-row;
+  article {
+    @include grid-column(8);
+    p{}
+  }
+  aside {
+    @include grid-column(4);
+    h2{}
+  }
+
+}
