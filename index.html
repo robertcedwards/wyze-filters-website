@@ -7,6 +7,8 @@
     <title>Vinyl Wraps and Filters for Wifi Cameras</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://trello.com/css/static.css">
+
   </head>
   <body>
     <header>
@@ -18,14 +20,6 @@
   </nav>
 </header>
 <main>
-  <article>
-    <h2>Vinyl Wraps</h2>
-    <p>for your Wyze Cam, iSmart, or Xiaomi XiaoFang Cameras.</p>
-    <p>Precision Fit to wrap perfectly round the body of your camera.</p>
-    <p>Protect your lens with polarized lens filters.</p>
-    <p>Reduce glare and window reflections with the matte black finish.</p>
-    <p>Camoflage your camera into the environment or around your house </p>
-  </article>
   <aside>
     <h3>Buy</h3>
     <span>
@@ -35,48 +29,28 @@
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
-      <!-- Load Stripe.js on your website. -->
-      <script src="https://js.stripe.com/v3"></script>
-
-      <!-- Create a button that your customers click to complete their purchase. -->
-      <button id="checkout-button">Pay</button>
-      <div id="error-message"></div>
     </span>
   </aside>
+  <article>
+    <h2>Vinyl Wraps</h2>
+    <p>for your Wyze Cam, iSmart, or Xiaomi XiaoFang Cameras.</p>
+    <p>Precision Fit to wrap perfectly round the body of your camera.</p>
+    <p>Protect your lens with polarized lens filters.</p>
+    <p>Reduce glare and window reflections with the matte black finish.</p>
+    <p>Camoflage your camera into the environment or around your house </p>
+  </article>
+  <article>
+    <h2>Trello Board</h2>
+    <h3>See here for updates</h3>
+    <script src="https://trello.com/b/vXPfuC86.js"></script>
+  </article
+
 
 </main>
-<footer><h4>Footer<h4></footer>
+<footer><h4>Copyright 2019 - Think Make Repeat<h4></footer>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/min/app-min.js"></script>
-    <script>
-      var stripe = Stripe('pk_live_WI9Pv5MPIQFHftuebeAWjLIc', {
-        betas: ['checkout_beta_4']
-      });
-
-      var checkoutButton = document.getElementById('checkout-button');
-      checkoutButton.addEventListener('click', function () {
-        // When the customer clicks on the button, redirect
-        // them to Checkout.
-        stripe.redirectToCheckout({
-          items: [{sku: 'sku_ECIqMLmq4mx7pA', quantity: 1}],
-
-          // Note that it is not guaranteed your customers will be redirected to this
-          // URL *100%* of the time, it's possible that they could e.g. close the
-          // tab between form submission and the redirect.
-          successUrl: 'https:///ThinkMakeRepeat.github.io/Wyze-Cam-Filters/success.html',
-          cancelUrl: 'https:///ThinkMakeRepeat.github.io/Wyze-Cam-Filters/cancel.html',
-        })
-        .then(function (result) {
-          if (result.error) {
-            // If `redirectToCheckout` fails due to a browser or network
-            // error, display the localized error message to your customer.
-            var displayError = document.getElementById('error-message');
-            displayError.textContent = result.error.message;
-          }
-        });
-      });
-    </script>
   </body>
 </html>

@@ -41,22 +41,8 @@ main {
     order: 1; }
   main::after {
     clear: both; }
-  main article {
-    width: 66.6666666667%;
-    float: left;
-    padding-right: 0.625rem;
-    padding-left: 0.625rem; }
-    @media print, screen and (min-width: 40em) {
-      main article {
-        padding-right: 0.9375rem;
-        padding-left: 0.9375rem; } }
-    main article, main article:last-child:not(:first-child) {
-      float: left;
-      clear: none; }
-    main article:last-child:not(:first-child) {
-      float: right; }
   main aside {
-    width: 33.3333333333%;
+    width: 100%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem; }
@@ -69,3 +55,35 @@ main {
       clear: none; }
     main aside:last-child:not(:first-child) {
       float: right; }
+  main article {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      main article {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    main article, main article:last-child:not(:first-child) {
+      float: left;
+      clear: none; }
+    main article:last-child:not(:first-child) {
+      float: right; }
+  main footer {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      main footer {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    main footer, main footer:last-child:not(:first-child) {
+      float: left;
+      clear: none; }
+    main footer:last-child:not(:first-child) {
+      float: right; }
+    main footer h4 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
