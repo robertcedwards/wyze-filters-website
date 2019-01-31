@@ -16,6 +16,13 @@
 		"oAP": "/.gitattributes",
 		"oF": 0
 		},
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/css/app.css": {
 		"aP": 1,
 		"bl": 0,
@@ -35,6 +42,17 @@
 		"oAP": "/css/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/images/full-wrap.jpg": {
+		"ft": 16384,
+		"iS": 63489,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/full-wrap.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/index.html": {
 		"cB": 0,

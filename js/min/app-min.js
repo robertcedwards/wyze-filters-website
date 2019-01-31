@@ -1,2 +1,2 @@
-"use strict";$(document).foundation();
+"use strict";$(document).foundation(),paypal.Button.render({env:"sandbox",style:{label:"pay",size:"medium",shape:"pill",color:"white",tagline:"false"},client:{sandbox:"AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R",production:"<insert production client id>"},payment:function t(e,n){return n.payment.create({payment:{transactions:[{amount:{total:"0.01",currency:"USD"}}]}})},onAuthorize:function t(e,n){return n.payment.execute().then(function(){window.alert("Payment Complete!")})}},"#paypal-button-container");
 //# sourceMappingURL=app-min.js.map
