@@ -41,22 +41,8 @@ main {
     order: 1; }
   main::after {
     clear: both; }
-  main aside {
-    width: 100%;
-    float: left;
-    padding-right: 0.625rem;
-    padding-left: 0.625rem; }
-    @media print, screen and (min-width: 40em) {
-      main aside {
-        padding-right: 0.9375rem;
-        padding-left: 0.9375rem; } }
-    main aside, main aside:last-child:not(:first-child) {
-      float: left;
-      clear: none; }
-    main aside:last-child:not(:first-child) {
-      float: right; }
   main article {
-    width: 100%;
+    width: 50%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem; }
@@ -68,6 +54,51 @@ main {
       float: left;
       clear: none; }
     main article:last-child:not(:first-child) {
+      float: right; }
+  main span {
+    width: 33.3333333333%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    border: 5px;
+    border-radius: 5px;
+    background: lightgrey;
+    box-shadow: 3px 3px;
+    overflow: hidden;
+    color: grey; }
+    @media print, screen and (min-width: 40em) {
+      main span {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    main span, main span:last-child:not(:first-child) {
+      float: left;
+      clear: none; }
+    main span:last-child:not(:first-child) {
+      float: right; }
+    main span > :last-child {
+      margin-bottom: 0; }
+    main span img {
+      padding: .5em; }
+    main span #paypal-button-container {
+      margin: 0 auto;
+      padding: .5em; }
+  main article.trello {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      main article.trello {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    main article.trello, main article.trello:last-child:not(:first-child) {
+      float: left;
+      clear: none; }
+    main article.trello:last-child:not(:first-child) {
       float: right; }
   main footer {
     width: 100%;
